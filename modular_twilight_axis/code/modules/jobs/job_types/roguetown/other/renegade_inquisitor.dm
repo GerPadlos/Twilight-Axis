@@ -4,6 +4,10 @@
 /datum/job/roguetown/renegade_inquisitor
 	title = "Renegade Inquisitor"
 	flag = RENEGADE_INQUISITOR
+
+/datum/job/roguetown/renegade_inquisitor/New()
+	. = ..()
+	log_game("RENEGADE DEBUG: job datum created, title=[title]")
 	department_flag = ANTAGONIST
 	faction = "Station"
 	total_positions = 1
@@ -33,9 +37,13 @@
 
 /datum/job/roguetown/renegade_inquisitor/after_spawn(mob/living/L, mob/M, latejoin = TRUE)
 	..()
+	log_game("RENEGADE DEBUG: after_spawn called")
 	if(!ishuman(L))
+		log_game("RENEGADE DEBUG: not human, aborting")
 		return
 	var/mob/living/carbon/human/H = L
+	var/datum/job/J = SSjob.GetJob("Renegade Inquisitor")
+	log_game("RENEGADE DEBUG: GetJob('Renegade Inquisitor') = [J]")
 
 	// Force-move to Wretch spawn landmarks
 	if(latejoin)
