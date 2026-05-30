@@ -4096,4 +4096,15 @@
 #include "modular_deserttown\jobs\bandits_replace\lost_grenzel-advclasses\lost_mage.dm"
 #include "modular_deserttown\jobs\bandits_replace\lost_grenzel-advclasses\lost_jager.dm"
 #include "modular_deserttown\jobs\bandits_replace\lost_grenzel-advclasses\lost_doppelsoldner.dm"
+
+// Renegade Inquisitor (Twilight Axis)
+#include "modular_twilight_axis\code\datums\renegade_inquisitor_progress.dm"
+#include "modular_twilight_axis\code\game\gamemodes\objectives_renegade_inquisitor.dm"
+#include "modular_twilight_axis\code\game\objects\items\renegade_weapon_kit.dm"
+#include "modular_twilight_axis\code\game\objects\items\ritualcircles_renegade.dm"
+#include "modular_twilight_axis\code\modules\antagonists\roguetown\renegade_inquisitor.dm"
+#include "modular_twilight_axis\code\modules\clothing\rogueclothes\psycross_exalted.dm"
+#include "modular_twilight_axis\code\modules\jobs\job_types\roguetown\other\renegade_inquisitor.dm"
+#include "modular_twilight_axis\code\modules\spells\roguetown\convert_heretic_override.dm"
+#include "modular_twilight_axis\code\modules\spells\spell_types\renegade_inquisitor.dm"
 // END_INCLUDE

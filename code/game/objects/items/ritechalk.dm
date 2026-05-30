@@ -46,6 +46,7 @@
 			ritechoices+="Rune of Stirring"
 		if(/datum/patron/old_god)
 			ritechoices+="Rune of Enduring"
+			ritechoices+="Rune of Psydon's Voice"
 
 	if(HAS_TRAIT(user, TRAIT_DREAMWALKER) && !("Rune of Stirring" in ritechoices))
 		ritechoices+="Rune of Stirring"

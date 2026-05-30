@@ -369,6 +369,7 @@
 			return
 		src.visible_message(span_warning("[src]'s silver psycross abruptly catches flame, burning away in an instant!"))
 		H.confess_sins("antag")
+		SEND_SIGNAL(src, COMSIG_TORTURE_PERFORMED, src, H)
 		qdel(S)
 		return
 	to_chat(src, span_warning("This one is not in a ready state to be questioned..."))

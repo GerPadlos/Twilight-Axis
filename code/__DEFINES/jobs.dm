@@ -134,6 +134,7 @@
 #define VAMPIRE_SPAWN 	(1<<8)
 #define GNOLL			(1<<9)
 #define HAG				(1<<10)
+#define RENEGADE_INQUISITOR	(1<<11)
 
 #define SLOP				(1<<13)
 

@@ -71,7 +71,7 @@
 		GLOB.excommunicated_players -= target.real_name
 		absolvable = TRUE
 
-	if(!absolvable)
+	if(!absolvable && !user.mind?.has_antag_datum(/datum/antagonist/renegade_inquisitor))
 		to_chat(user, span_warning("[target] doesn't bear the church's marks of shame!"))
 		return FALSE
 
