@@ -42,15 +42,15 @@
 		var/obj/effect/landmark/start/S = locate(/obj/effect/landmark/start/wretchlate) in GLOB.start_landmarks_list
 		if(S)
 			H.forceMove(S.loc)
-		else if(GLOB.latejoin_trackers.len)
-			var/atom/destination = pick(GLOB.latejoin_trackers)
+		else if(SSjob.latejoin_trackers.len)
+			var/atom/destination = pick(SSjob.latejoin_trackers)
 			destination.JoinPlayerHere(H, TRUE)
 	else
 		var/obj/effect/landmark/start/S = locate(/obj/effect/landmark/start/wretch) in GLOB.start_landmarks_list
 		if(S)
 			H.forceMove(S.loc)
-		else if(GLOB.latejoin_trackers.len)
-			var/atom/destination = pick(GLOB.latejoin_trackers)
+		else if(SSjob.latejoin_trackers.len)
+			var/atom/destination = pick(SSjob.latejoin_trackers)
 			destination.JoinPlayerHere(H, TRUE)
 
 	// Assign antag datum
